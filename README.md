@@ -1,8 +1,8 @@
 # Mini-level — Inleveren
 
-**Naam:** [Max Burkart]
-**Klas:** [4m3]
-**Datum:** [26-10-2026]
+**Naam:** Max Burkart
+**Klas:** 4m3
+**Datum:** 26-10-2026
 **Les:** GDV Les 6
 
 ## Wat heb ik gemaakt?
@@ -16,29 +16,30 @@ De object die beweegt is de grijze bal in het midden wat namelijk de player is. 
 
 void Update() 
 {
-    Vector3 startpos = transform.position;
- Vector3 positie = transform.position;
- if (Input.GetKey(KeyCode.W))
- {
-     positie.y = positie.y + snelheid * Time.deltaTime; 
- }
+Vector3 startpos = transform.position;
+Vector3 positie = transform.position;
 
- if (Input.GetKey(KeyCode.S))
- {
-     positie.y = positie.y - snelheid * Time.deltaTime; 
- }
+if (Input.GetKey(KeyCode.W))
+{
+positie.y = positie.y + snelheid * Time.deltaTime; 
+}
 
- if (Input.GetKey(KeyCode.A))
- {
-     positie.x = positie.x + snelheid * Time.deltaTime; 
- }
+if (Input.GetKey(KeyCode.S))
+{
+positie.y = positie.y - snelheid * Time.deltaTime; 
+}
 
- if (Input.GetKey(KeyCode.D))
- {
-     positie.x = positie.x - snelheid * Time.deltaTime; 
- }
+if (Input.GetKey(KeyCode.A))
+{
+positie.x = positie.x + snelheid * Time.deltaTime; 
+}
 
- transform.position = positie;
+if (Input.GetKey(KeyCode.D))
+{
+positie.x = positie.x - snelheid * Time.deltaTime; 
+}
+
+transform.position = positie;
 }
 
 ## Collider of trigger
@@ -47,29 +48,28 @@ Daarna heb ik een OnCollisionEnter voor de deur waar als je het aanraakt zonder 
 
 private void OnTriggerEnter(Collider other) 
 {
-
-            if (other.gameObject.CompareTag("Key"))
-            {
-                haskey = true;
-            Destroy(other.gameObject);
-            }
-        if (other.gameObject.CompareTag("Key2"))
-        {
-            haskey2 = true;
-            Destroy(other.gameObject);
-        }
-    }
-    void OnCollisionEnter(Collision other)
-    {
-        if (other.gameObject.CompareTag("Door") && haskey == true)
-        {
-            Destroy(other.gameObject);
-        }
-        if (other.gameObject.CompareTag("Door2") && haskey2 == true)
-        {
-            Destroy(other.gameObject);
-        }
-    }
+if (other.gameObject.CompareTag("Key"))
+{
+haskey = true;
+Destroy(other.gameObject);
+}
+if (other.gameObject.CompareTag("Key2"))
+{
+haskey2 = true;
+Destroy(other.gameObject);
+}
+}
+void OnCollisionEnter(Collision other)
+{
+if (other.gameObject.CompareTag("Door") && haskey == true)
+{
+Destroy(other.gameObject);
+}
+if (other.gameObject.CompareTag("Door2") && haskey2 == true)
+{
+Destroy(other.gameObject);
+}
+}
     
 
  ## Logica met if of switch
@@ -77,30 +77,28 @@ Ik heb if statements gemaakt voor het bewegen waar als je een knopje klikt gaat 
 
 // Plak hier het stuk code met jouw if- of switch-logica.
 if (Input.GetKey(KeyCode.W))
- {
-     positie.y = positie.y + snelheid * Time.deltaTime; 
- }
+{
+positie.y = positie.y + snelheid * Time.deltaTime; 
+}
 
- if (Input.GetKey(KeyCode.S))
- {
-     positie.y = positie.y - snelheid * Time.deltaTime; 
- }
+if (Input.GetKey(KeyCode.S))
+{
+positie.y = positie.y - snelheid * Time.deltaTime; 
+}
 
- if (Input.GetKey(KeyCode.A))
- {
-     positie.x = positie.x + snelheid * Time.deltaTime; 
- }
+if (Input.GetKey(KeyCode.A))
+{
+positie.x = positie.x + snelheid * Time.deltaTime; 
+}
 
- if (Input.GetKey(KeyCode.D))
- {
-     positie.x = positie.x - snelheid * Time.deltaTime; 
- }
+if (Input.GetKey(KeyCode.D))
+{
+positie.x = positie.x - snelheid * Time.deltaTime; 
+}
 
 
  ## Eigen extra idee
 Ik weet niet of dit telt maar de concept van een tweede sleutel hebben vanplaats van 1 sleutel is nieuw.
-
-## Evaluatie
 
 ### Wat ging goed? en waarom?
 Het maken van de level zelf waar je doorheen moet zien te komen
