@@ -15,8 +15,6 @@ Ik heb een mini-level gemaakt waarin je twee sleutels moet pakken om twee versch
 ## Bewegend object
 Het object dat beweegt is de grijze bal in het midden, wat de speler is. De speler beweegt met de WASD-toetsen. 
 
-*Verbeterde bewegingscode (de A-toets stuurt je nu netjes naar links en D naar rechts):*
-
 ```csharp
 void Update() 
 {
@@ -52,9 +50,9 @@ void Update()
 ```
 
 ## Collider of trigger
-Ik heb een `OnTriggerEnter` gebruikt voor de sleutels. Als je een sleutel aanraakt, krijg je een variabele genaamd `haskey`. Ik heb ook een tweede sleutel toegevoegd die de variabele `haskey2` activeert.
+Ik heb een OnTriggerEnter gebruikt voor de sleutels. Als je een sleutel aanraakt, krijg je een variabele genaamd haskey. Ik heb ook een tweede sleutel toegevoegd die de variabele haskey2 activeert.
 
-Daarnaast gebruik ik een `OnCollisionEnter` voor de deuren. Als je de deur aanraakt zonder dat je de bijbehorende sleutel hebt opgepakt, blokkeert de deur je. Heb je de sleutel wel, dan verdwijnt de deur zodra je hem aanraakt.
+Daarnaast gebruik ik een OnCollisionEnter voor de deuren. Als je de deur aanraakt zonder dat je de bijbehorende sleutel hebt opgepakt, blokkeert de deur je. Heb je de sleutel wel, dan verdwijnt de deur zodra je hem aanraakt.
 
 ```csharp
 private void OnTriggerEnter(Collider other) 
@@ -87,7 +85,7 @@ void OnCollisionEnter(Collision other)
 ```
 
 ## Logica met if of switch
-Ik heb `if`-statements gemaakt voor het bewegen. Als je een specifieke toets indrukt, wordt de code binnen het `if`-statement uitgevoerd waardoor de speler de juiste kant op beweegt.
+Ik heb if-statements gemaakt voor het bewegen. Als je een specifieke toets indrukt, wordt de code binnen het if-statement uitgevoerd waardoor de speler de juiste kant op beweegt.
 
 ```csharp
 if (Input.GetKey(KeyCode.W))
