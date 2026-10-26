@@ -10,7 +10,7 @@ Ik heb een mini-level gemaakt waarin je twee sleutels moet pakken om twee versch
 
 ## Screenshot / GIF van je level
 
-
+![Screenshot van mijn level](degame.png)
 
 ## Bewegend object
 Het object dat beweegt is de grijze bal in het midden, wat de speler is. De speler beweegt met de WASD-toetsen. 
