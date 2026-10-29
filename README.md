@@ -8,9 +8,9 @@
 ## Wat heb ik gemaakt?
 Ik heb een mini-level gemaakt waarin je twee sleutels moet pakken om twee verschillende deuren te openen. Om bij de sleutels te komen, moet je door rode obstakels heen manoeuvreren. Als je een van deze obstakels aanraakt, verdwijnt het obstakel en word je direct terug naar de start geteleporteerd. Dit zorgt voor een uniek mechanisme: hoe vaker je het probeert, hoe makkelijker het level wordt!
 
-## Screenshot / GIF van je level
+## GIF van mijn level
 
-![Screenshot van mijn level](degame.png)
+![Gif van mijn level](gif.gif)
 
 ## Bewegend object
 Het object dat beweegt is de grijze bal in het midden, wat de speler is. De speler beweegt met de WASD-toetsen. 
