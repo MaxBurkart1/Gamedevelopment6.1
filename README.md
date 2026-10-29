@@ -10,7 +10,7 @@ Ik heb een mini-level gemaakt waarin je twee sleutels moet pakken om twee versch
 
 ## GIF van mijn level
 
-![Gif van mijn level](gif.gif)
+![Gif van mijn level](minilevel.gif)
 
 ## Bewegend object
 Het object dat beweegt is de grijze bal in het midden, wat de speler is. De speler beweegt met de WASD-toetsen. 
